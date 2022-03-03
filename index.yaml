@@ -3,6 +3,21 @@ entries:
   soketi:
   - apiVersion: v2
     appVersion: 0.29.0
+    created: "2022-03-03T01:36:39.322090666Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.4.5
+    description: Run soketi/soketi in your Kubernetes cluster using this Helm chart.
+    digest: fd1e14e29840d5f8b1ed17fa94ed573300498223bc0cb66397fab0692011e9a2
+    name: soketi
+    type: application
+    urls:
+    - https://github.com/nicko170/charts-1/releases/download/soketi-0.15.6/soketi-0.15.6.tgz
+    version: 0.15.6
+  - apiVersion: v2
+    appVersion: 0.29.0
     created: "2022-03-02T02:23:19.011228689Z"
     description: Run soketi/soketi in your Kubernetes cluster using this Helm chart.
     digest: 5b584103040837b38c8b4744a7ec2cfc2ed2fb822bbae71becae64771f9596c7
@@ -11,4 +26,4 @@ entries:
     urls:
     - https://github.com/nicko170/charts-1/releases/download/soketi-0.15.4/soketi-0.15.4.tgz
     version: 0.15.4
-generated: "2022-03-02T02:23:19.011233189Z"
+generated: "2022-03-03T01:36:39.322106366Z"
