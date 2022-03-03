@@ -85,6 +85,10 @@ spec:
             {{- toYaml .Values.networkWatcher.resources | nindent 12 }}
         {{- end }}
         - name: {{ .Chart.Name }}
+          {{- with .Values.app.envFrom }}
+          envFrom:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.app.image.repository }}:{{ .Values.app.image.tag | default .Chart.AppVersion }}"
